@@ -4,7 +4,7 @@
 # compile CXX with C:/msys64/mingw64/bin/g++.exe
 CXX_DEFINES = -DUNICODE -D_UNICODE
 
-CXX_INCLUDES = @CMakeFiles/FINDPGE.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/Procedural_Map_Generator.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -std=gnu++17
 

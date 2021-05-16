@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Procedural_Map_Generator.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\Procedural_Map_Generator.dir/objects.a @CMakeFiles\Procedural_Map_Generator.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Procedural_Map_Generator.dir/objects.a -Wl,--no-whole-archive -o Procedural_Map_Generator.exe -Wl,--out-implib,libProcedural_Map_Generator.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Procedural_Map_Generator.dir\linklibs.rsp

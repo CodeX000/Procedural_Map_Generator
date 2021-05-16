@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Admin/Documents/GitHub/Gen_Map/src/main.cpp" "C:/Users/Admin/Documents/GitHub/Gen_Map/cmake-build-debug/CMakeFiles/FindPGE.dir/src/main.cpp.obj"
+  "C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/src/main.cpp" "C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/cmake-build-debug/CMakeFiles/Procedural_Map_Generator.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION "3.10.2")
 
-project("Gen_Map")
+project("Procedural_Map_Generator")
 
 # Set language version
 set(CMAKE_CXX_STANDARD 17)

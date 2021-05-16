@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/noise.hpp
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/noise.hpp
 cmath
 -
 cstdint
@@ -14,11 +14,11 @@ cstdint
 type_traits
 -
 
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/olcPixelGameEngine.h
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/olcPixelGameEngine.h
 olcPixelGameEngine.h
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/olcPixelGameEngine.h
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/olcPixelGameEngine.h
 olcPixelGameEngine.h
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/olcPixelGameEngine.h
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/olcPixelGameEngine.h
 cmath
 -
 cstdint
@@ -118,17 +118,17 @@ shlwapi.h
 png.h
 -
 stb_image.h
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/stb_image.h
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/stb_image.h
 emscripten/html5.h
 -
 emscripten/key_codes.h
 -
 
-C:/Users/Admin/Documents/GitHub/Gen_Map/src/main.cpp
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/src/main.cpp
 ../include/olcPixelGameEngine.h
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/olcPixelGameEngine.h
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/olcPixelGameEngine.h
 ../include/noise.hpp
-C:/Users/Admin/Documents/GitHub/Gen_Map/include/noise.hpp
+C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/include/noise.hpp
 stdlib.h
 -
 

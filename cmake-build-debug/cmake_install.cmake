@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Admin/Documents/GitHub/Gen_Map
+# Install script for directory: C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/FindPGE")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Gen_Map")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Admin/Documents/GitHub/Gen_Map/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

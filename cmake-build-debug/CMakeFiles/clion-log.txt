@@ -1,5 +1,5 @@
-"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Admin\Documents\GitHub\Gen_Map
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator
 -- Found olcPixelGameEngine version 2.15
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Admin/Documents/GitHub/Gen_Map/cmake-build-debug
+-- Build files have been written to: C:/Users/Admin/Documents/GitHub/Procedural_Map_Generator/cmake-build-debug

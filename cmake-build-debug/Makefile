@@ -66,24 +66,13 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Admin\Documents\GitHub\Gen_Map
+CMAKE_SOURCE_DIR = C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Admin\Documents\GitHub\Gen_Map\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -96,11 +85,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Documents\GitHub\Gen_Map\cmake-build-debug\CMakeFiles C:\Users\Admin\Documents\GitHub\Gen_Map\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator\cmake-build-debug\CMakeFiles C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Documents\GitHub\Gen_Map\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Documents\GitHub\Procedural_Map_Generator\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,17 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Gen_Map
+# Target rules for targets named Procedural_Map_Generator
 
 # Build rule for target.
-Gen_Map: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Gen_Map
-.PHONY : Gen_Map
+Procedural_Map_Generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Procedural_Map_Generator
+.PHONY : Procedural_Map_Generator
 
 # fast build rule for target.
-Gen_Map/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gen_Map.dir\build.make CMakeFiles/Gen_Map.dir/build
-.PHONY : Gen_Map/fast
+Procedural_Map_Generator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Procedural_Map_Generator.dir\build.make CMakeFiles/Procedural_Map_Generator.dir/build
+.PHONY : Procedural_Map_Generator/fast
 
 src/main.obj: src/main.cpp.obj
 
@@ -147,7 +147,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gen_Map.dir\build.make CMakeFiles/Gen_Map.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Procedural_Map_Generator.dir\build.make CMakeFiles/Procedural_Map_Generator.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -156,7 +156,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gen_Map.dir\build.make CMakeFiles/Gen_Map.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Procedural_Map_Generator.dir\build.make CMakeFiles/Procedural_Map_Generator.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -165,7 +165,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gen_Map.dir\build.make CMakeFiles/Gen_Map.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Procedural_Map_Generator.dir\build.make CMakeFiles/Procedural_Map_Generator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -176,7 +176,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Gen_Map
+	@echo ... Procedural_Map_Generator
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
