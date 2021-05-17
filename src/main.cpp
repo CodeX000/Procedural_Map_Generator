@@ -12,7 +12,7 @@ public:
     }
 private:
     //TODO: implement chunk system, chunks that are modified are saved and are loaded when seen again based on x,y coords
-    double seed = rand();
+    double seed = .5;
     double modifier = 232.143324;
     int xPos = 0;
     int yPos = 0;
@@ -27,9 +27,9 @@ public:
 
         Clear(olc::DARK_CYAN);
         if (GetKey(olc::Key::E).bHeld)
-                seed -= .2123213;
+                seed -= 1.0;
         if (GetKey(olc::Key::R).bHeld)
-            seed += .2123213;
+            seed += 1.0;
 
         if (GetKey(olc::Key::W).bHeld)
             yPos--;
@@ -42,31 +42,8 @@ public:
 
         for(int x = xPos; x < ScreenWidth() + xPos; x++){
             for(int y = yPos; y < ScreenHeight() + yPos; y++){
-                double perlinVal = (1 + perlin::noise((x * seed / modifier), (y * seed / modifier))) / 2.0;
-
-                if(perlinVal > .75){
-                    Draw(x - xPos, y - yPos, olc::VERY_DARK_GREY);
-                }
-                else if(perlinVal > .65){
-                    Draw(x - xPos, y - yPos, olc::GREY);
-                }
-                else if(perlinVal > .55){
-                    Draw(x - xPos, y - yPos, olc::VERY_DARK_GREEN);
-                }
-                else if(perlinVal > .52){
-                    Draw(x - xPos, y - yPos, olc::DARK_GREEN);
-                }
-                else if(perlinVal > .5){
-                    Draw(x - xPos, y - yPos, olc::WHITE);
-                }
-                else if(perlinVal > .3){
-                    Draw(x - xPos, y - yPos, olc::DARK_BLUE);
-                }
-                else if(perlinVal > 0){
-                    Draw(x - xPos, y - yPos, olc::VERY_DARK_BLUE);
-                }
-
-                //Draw(x, y, olc::Pixel(255 * perlinVal, 255 * perlinVal, 255 * perlinVal));
+                double perlinVal = (1 + perlin::noise((x * seed), (y * seed))) / 2.0;
+                Draw(x - xPos, y - yPos, olc::Pixel(255 * perlinVal, 255 * perlinVal, 255 * perlinVal));
             }
         }
 
@@ -80,11 +57,11 @@ public:
 };
 
 int main() {
-    int screenPixelsX = 128;
-    int screenPixelsY = 128;
+    int screenPixelsX = 64;
+    int screenPixelsY = 64;
 
     MapGenerator map;
-    if (map.Construct(screenPixelsX, screenPixelsY, 4, 4, false, true))
+    if (map.Construct(screenPixelsX, screenPixelsY, 8, 8, false, true))
         map.Start();
 
     return 0;
