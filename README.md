@@ -1,2 +1,2 @@
 # Procedural_Map_Generator
-A test to see how good I can make an infinite world
+An experiment in creating a simple infinitely generated map using perlin noise.
